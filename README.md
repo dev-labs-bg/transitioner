@@ -108,6 +108,8 @@ Another one, implemented in a weather app
 
 ![Preview2](https://raw.githubusercontent.com/dev-labs-bg/transitioner/master/preview2.gif)
 
+These effects can be reproduced by placing the "Transitioner.setProgress(Float)" function inside a onTouch or a onProgressChanged method.
+
 ---
 ## Compatibility
 
