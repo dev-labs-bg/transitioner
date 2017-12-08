@@ -36,7 +36,7 @@ First you need to create a Transitioner object containing your original and endi
 val transition = Transitioner(original_view, ending_view)
 ```
   
-The views must have matching "transitionName" attributes so that they can be bound together:
+The view pairs must have matching "transitionName" attributes so that they can be bound together:
 
 ```xml
 <ConstraintLayout
@@ -66,7 +66,7 @@ The views must have matching "transitionName" attributes so that they can be bou
  </ConstraintLayout>
 ```
 
-I recommend you hide the second view, since it's only used as a placeholder for the end destination.
+I recommend you hide the second view layout, since it's only used as a placeholder for the end destination.
 The views can be of any type, you can mix and match them, the two layouts can have a different number of views and nested layouts are 100% supported. The only things to keep in mind are:
 
 -  all views which you would want to match together must have the same transitionName attribute in both layouts
@@ -100,7 +100,7 @@ val progress: Float = transition.currentProgress
 
 ```
 
-Here is a preview of a test application made using this library
+Here is a preview of a simple application made using this library
 
 ![Preview](https://raw.githubusercontent.com/dev-labs-bg/transitioner/master/preview.gif)
 
