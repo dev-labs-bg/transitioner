@@ -75,6 +75,7 @@ The views must have matching "transitionName" attributes so that they can be bou
  </android.support.constraint.ConstraintLayout>
 ```
 
+I recommend you hide the second view, since it's only used as a placeholder for the end destination.
 The views can be of any type, you can mix and match them, the two layouts can have a different number of views and nested layouts are 100% supported. The only things to keep in mind are:
 
 -  all views which you would want to match together must have the same transitionName attribute in both layouts
