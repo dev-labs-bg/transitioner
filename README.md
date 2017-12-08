@@ -124,7 +124,7 @@ Minimum Android SDK: API level 21
 ---
 ## Author
 
-Radoslav Yankov -[@Radoslav_Y](https://twitter.com/Radoslav_Y) on Twitter
+Radoslav Yankov [@Radoslav_Y](https://twitter.com/Radoslav_Y)
 
 ---
 ## Getting help
