@@ -2,32 +2,8 @@
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-a31f34.svg?style=flat-square)](https://opensource.org/licenses/MIT) [ ![Download](https://img.shields.io/bintray/v/radoslav/maven/transitioner.svg?style=flat-square&label=version) ](https://bintray.com/radoslav/maven/transitioner/0.0.1/link)[![Kotlin](https://img.shields.io/badge/kotlin-1.2.0-f5801e.svg?style=flat-square)](http://kotlinlang.org) [![Twitter URL](https://img.shields.io/badge/twitter-%40devlabsbg-1DA1F2.svg?style=flat-square&logo=twitter)](http://twitter.com/devlabsbg)
 
+Transitioner provides easy, dynamic and adjustable animation between two views with nested children. 
 
-## Download
-
-### Gradle
-
-```gradle
-dependencies {
-  compile 'bg.devlabs.transitioner:transitioner:<latest_version>'
-}
- ```
- 
-### Maven
-```xml
-<dependency>
-  <groupId>bg.devlabs.transitioner</groupId>
-  <artifactId>transitioner</artifactId>
-  <version>latest_version</version>
-  <type>pom</type>
-</dependency>
-```
-
-### Manually
-
-You can also manually download [the library class](https://github.com/dev-labs-bg/transitioner/blob/master/transitioner/src/main/java/bg/devlabs/transitioner/Transitioner.kt) and use it in your application.
-
----
 ## Usage
 
 First you need to create a Transitioner object containing your original and ending views:
@@ -109,6 +85,31 @@ Another one, implemented in a weather app
 ![Preview2](https://raw.githubusercontent.com/dev-labs-bg/transitioner/master/preview2.gif)
 
 These effects can be reproduced by placing the "Transitioner.setProgress(Float)" function inside a onTouch or a onProgressChanged method.
+
+---
+## Download
+
+### Gradle
+
+```gradle
+dependencies {
+  compile 'bg.devlabs.transitioner:transitioner:<latest_version>'
+}
+ ```
+ 
+### Maven
+```xml
+<dependency>
+  <groupId>bg.devlabs.transitioner</groupId>
+  <artifactId>transitioner</artifactId>
+  <version>latest_version</version>
+  <type>pom</type>
+</dependency>
+```
+
+### Manually
+
+You can also manually download [the library class](https://github.com/dev-labs-bg/transitioner/blob/master/transitioner/src/main/java/bg/devlabs/transitioner/Transitioner.kt) and use it in your application.
 
 ---
 ## Compatibility
