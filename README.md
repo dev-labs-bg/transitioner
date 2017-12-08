@@ -39,40 +39,31 @@ val transition = Transitioner(original_view, ending_view)
 The views must have matching "transitionName" attributes so that they can be bound together:
 
 ```xml
-<android.support.constraint.ConstraintLayout
+<ConstraintLayout
         android:id="@+id/original_view"
         android:transitionName="constrView"
         android:layout_width="180dp"
-        android:layout_height="180dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="180dp">
 
         <TextView
             android:id="@+id/text"
             android:transitionName="firstView"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"/>
-</android.support.constraint.ConstraintLayout>
+            android:layout_height="wrap_content"/>
+</ConstraintLayout>
 
-<android.support.constraint.ConstraintLayout
+<ConstraintLayout
         android:id="@+id/ending_view"
         android:transitionName="constrView"
         android:layout_width="280dp"
-        android:layout_height="280dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="280dp">
 
         <EditText
             android:id="@+id/text3"
             android:transitionName="firstView"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
- </android.support.constraint.ConstraintLayout>
+            android:layout_height="wrap_content"/>
+ </ConstraintLayout>
 ```
 
 I recommend you hide the second view, since it's only used as a placeholder for the end destination.
