@@ -1,6 +1,6 @@
 ![logo](https://raw.githubusercontent.com/dev-labs-bg/transitioner/master/logo.png)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) [ ![Download](https://api.bintray.com/packages/sstoyanova/flyingfab/flying-fab/images/download.svg?version=0.0.1) ](https://bintray.com/radoslav/maven/transitioner/0.0.1/link)[![Kotlin](https://img.shields.io/badge/kotlin-1.2-blue.svg)](http://kotlinlang.org) [![Twitter URL](https://img.shields.io/badge/twitter-@devlabsbg-blue.svg)](http://twitter.com/devlabsbg)
+[![License: MIT](https://img.shields.io/badge/license-MIT-a31f34.svg?style=flat-square)](https://opensource.org/licenses/MIT) [ ![Download](https://img.shields.io/badge/download-0.0.1-blue.svg?style=flat-square) ](https://bintray.com/radoslav/maven/transitioner/0.0.1/link)[![Kotlin](https://img.shields.io/badge/kotlin-1.2.0-f5801e.svg?style=flat-square)](http://kotlinlang.org) [![Twitter URL](https://img.shields.io/badge/twitter-%40devlabsbg-1DA1F2.svg?style=flat-square)](http://twitter.com/devlabsbg)
 
 
 ## Download
