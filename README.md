@@ -1,6 +1,6 @@
 ![logo](https://raw.githubusercontent.com/dev-labs-bg/transitioner/master/logo.png)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) [ ![Download](https://api.bintray.com/packages/sstoyanova/flyingfab/flying-fab/images/download.svg?version=0.0.5) ](https://bintray.com/radoslav/maven/transitioner/0.0.1/link)[![Kotlin](https://img.shields.io/badge/kotlin-1.2-blue.svg)](http://kotlinlang.org) [![Twitter URL](https://img.shields.io/badge/twitter-@devlabsbg-blue.svg)](http://twitter.com/devlabsbg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) [ ![Download](https://api.bintray.com/packages/sstoyanova/flyingfab/flying-fab/images/download.svg?version=0.0.1) ](https://bintray.com/radoslav/maven/transitioner/0.0.1/link)[![Kotlin](https://img.shields.io/badge/kotlin-1.2-blue.svg)](http://kotlinlang.org) [![Twitter URL](https://img.shields.io/badge/twitter-@devlabsbg-blue.svg)](http://twitter.com/devlabsbg)
 
 
 ## Download
@@ -112,7 +112,7 @@ Here is a preview of a test application made using this library
 
 ![Preview](https://raw.githubusercontent.com/dev-labs-bg/transitioner/master/preview.gif)
 
-Another one, implemeneted in a weather app
+Another one, implemented in a weather app
 
 ![Preview2](https://raw.githubusercontent.com/dev-labs-bg/transitioner/master/preview2.gif)
 
