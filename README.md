@@ -12,31 +12,31 @@ First you need to create a Transitioner object containing your original and endi
 val transition = Transitioner(original_view, ending_view)
 ```
   
-The view pairs must have matching "transitionName" attributes so that they can be bound together:
+The view pairs must have matching "tag" attributes so that they can be bound together:
 
 ```xml
 <ConstraintLayout
         android:id="@+id/original_view"
-        android:transitionName="constrView"
+        android:tag="constrView"
         android:layout_width="180dp"
         android:layout_height="180dp">
 
         <TextView
             android:id="@+id/text"
-            android:transitionName="firstView"
+            android:tag="firstView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 </ConstraintLayout>
 
 <ConstraintLayout
         android:id="@+id/ending_view"
-        android:transitionName="constrView"
+        android:tag="constrView"
         android:layout_width="280dp"
         android:layout_height="280dp">
 
         <EditText
             android:id="@+id/text3"
-            android:transitionName="firstView"
+            android:tag="firstView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
  </ConstraintLayout>
@@ -45,7 +45,7 @@ The view pairs must have matching "transitionName" attributes so that they can b
 I recommend you hide the second view layout, since it's only used as a placeholder for the end destination.
 The views can be of any type, you can mix and match them, the two layouts can have a different number of views and nested layouts are 100% supported. The only things to keep in mind are:
 
--  all views which you would want to match together must have the same transitionName attribute in both layouts
+-  all views which you would want to match together must have the same tag attribute in both layouts
 
 -  all unmatched views will remain at their original place inside the original layout
 
@@ -114,7 +114,7 @@ You can also manually download [the library class](https://github.com/dev-labs-b
 ---
 ## Compatibility
 
-Minimum Android SDK: API level 21
+Minimum Android SDK: API level 19
 
 ---
 ## Author
