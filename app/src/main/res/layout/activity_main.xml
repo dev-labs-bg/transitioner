@@ -15,7 +15,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:background="#210479"
-        android:transitionName="starting_view"
+        android:tag="starting_view"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -28,7 +28,7 @@
             android:text="21°C"
             android:textColor="#fff"
             android:textSize="40dp"
-            android:transitionName="text"
+            android:tag="text"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"/>
 
@@ -42,7 +42,7 @@
             android:text="1°C"
             android:textColor="#fff"
             android:textSize="20dp"
-            android:transitionName="text2"
+            android:tag="text2"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             />
@@ -75,7 +75,7 @@
             android:layout_marginEnd="8dp"
             android:layout_marginTop="8dp"
             android:background="#fff"
-            android:transitionName="view"
+            android:tag="view"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
     </android.support.constraint.ConstraintLayout>
@@ -88,7 +88,7 @@
         android:layout_marginTop="8dp"
         android:alpha="0.5"
         android:background="#eee"
-        android:transitionName="starting_view"
+        android:tag="starting_view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -100,7 +100,7 @@
             android:text="21°C"
             android:textColor="#ddd"
             android:textSize="40dp"
-            android:transitionName="text"
+            android:tag="text"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
@@ -114,7 +114,7 @@
             android:text="1°C"
             android:textColor="#ddd"
             android:textSize="20dp"
-            android:transitionName="text2"
+            android:tag="text2"
             app:layout_constraintBottom_toBottomOf="@+id/text3"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/text3"
@@ -127,7 +127,7 @@
             android:layout_marginBottom="8dp"
             android:layout_marginEnd="16dp"
             android:background="#444"
-            android:transitionName="view"
+            android:tag="view"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             />
@@ -140,7 +140,7 @@
         android:layout_marginBottom="108dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:transitionName="starting_view"
+        android:tag="starting_view"
         android:thumbTint="#210479"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

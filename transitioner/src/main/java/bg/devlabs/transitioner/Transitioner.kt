@@ -94,7 +94,7 @@ class Transitioner(startingView: View, endingView: View) {
     init {
         startingChildViews.forEach { old ->
             endingChildViews
-                    .filter { old.transitionName == it.transitionName }
+                    .filter { old.tag == it.tag }
                     .forEach { mappedViews.add(StateOfViews(old, it, Dimensions(old.x.toInt(), old.y.toInt(), old.width, old.height)))
                     }
         }
