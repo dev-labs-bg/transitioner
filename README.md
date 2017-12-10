@@ -4,6 +4,8 @@
 
 Transitioner provides easy, dynamic and adjustable animation between two views with nested children. 
 
+![preview1](https://github.com/dev-labs-bg/transitioner/blob/master/preview1.gif)
+
 ## Usage
 
 First you need to create a Transitioner object containing your original and ending views:
@@ -80,11 +82,7 @@ Here is a preview of a simple application made using this library
 
 ![Preview](https://raw.githubusercontent.com/dev-labs-bg/transitioner/master/preview.gif)
 
-Another one, implemented in a weather app
-
-![Preview2](https://raw.githubusercontent.com/dev-labs-bg/transitioner/master/preview2.gif)
-
-These effects can be reproduced by placing the "Transitioner.setProgress(Float)" function inside a onTouch or a onProgressChanged method.
+This effect can be reproduced by placing the "Transitioner.setProgress(Float)" function inside a onTouch or a onProgressChanged method.
 
 ---
 ## Download
