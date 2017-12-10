@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.view.MotionEvent
 import android.view.animation.AccelerateDecelerateInterpolator
+import android.view.animation.BounceInterpolator
 import android.widget.SeekBar
 import bg.devlabs.transitioner.Transitioner
 import kotlinx.android.synthetic.main.activity_main.*
@@ -20,8 +21,8 @@ class MainActivity : AppCompatActivity() {
             transition.duration = 500
             transition.interpolator = AccelerateDecelerateInterpolator()
             button.setOnClickListener {
-                transition.animateTo(0f)
-                transition.onPercentChanged {
+                transition.animateTo(percent = 0f, duration = 500, interpolator = BounceInterpolator())
+                transition.onProgressChanged {
                     seekBar.progress = (it * 100).toInt()
                 }
 
@@ -45,7 +46,6 @@ class MainActivity : AppCompatActivity() {
                         true
                     }
                 }
-
             }
 
             seekBar.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
@@ -53,18 +53,12 @@ class MainActivity : AppCompatActivity() {
                     transition.setProgress(progress)
                 }
 
-                override fun onStartTrackingTouch(seekBar: SeekBar?) {
-                }
-
-                override fun onStopTrackingTouch(seekBar: SeekBar?) {
-                }
-
+                override fun onStartTrackingTouch(seekBar: SeekBar?) {}
+                override fun onStopTrackingTouch(seekBar: SeekBar?) {}
             })
-
         }
     }
 }
-
 
 fun delay(delay: Long, func: () -> Unit) {
     Handler().postDelayed({
