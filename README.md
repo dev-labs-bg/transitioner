@@ -1,8 +1,8 @@
 ![logo](https://raw.githubusercontent.com/dev-labs-bg/transitioner/master/logo.png)
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-a31f34.svg?style=flat-square)](https://opensource.org/licenses/MIT) [ ![Download](https://img.shields.io/badge/download-0.0.3-1DA1F2.svg?style=flat-square&label=version) ](https://bintray.com/radoslav/maven/transitioner/0.0.3/link)[![Kotlin](https://img.shields.io/badge/kotlin-1.2.0-f5801e.svg?style=flat-square)](http://kotlinlang.org) [![Twitter URL](https://img.shields.io/badge/twitter-%40devlabsbg-1DA1F2.svg?style=flat-square&logo=twitter)](http://twitter.com/devlabsbg)
+[![License: MIT](https://img.shields.io/badge/license-MIT-a31f34.svg?style=flat-square)](https://opensource.org/licenses/MIT) [![Download](https://img.shields.io/badge/download-1.3-6db33f.svg?style=flat-square&label=version)](https://bintray.com/radoslav/maven/transitioner/1.3/link) [![Kotlin](https://img.shields.io/badge/kotlin-1.2.0-f5801e.svg?style=flat-square)](http://kotlinlang.org) [![Twitter URL](https://img.shields.io/badge/twitter-%40devlabsbg-1DA1F2.svg?style=flat-square&logo=twitter)](http://twitter.com/devlabsbg)
 
-Transitioner provides easy, dynamic and adjustable animation between two views with nested children.
+Transitioner provides easy, dynamic and adjustable animations between two views with nested children.
 
 
 <img src="https://github.com/dev-labs-bg/transitioner/blob/master/preview1.gif" width="600">
@@ -22,27 +22,24 @@ The view pairs must have matching "tag" attributes so that they can be bound tog
 <ConstraintLayout
         android:id="@+id/original_view"
         android:tag="constrView"
-        android:layout_width="180dp"
-        android:layout_height="180dp">
+        ...>
 
         <TextView
             android:id="@+id/text"
             android:tag="firstView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            .../>
 </ConstraintLayout>
 
 <ConstraintLayout
         android:id="@+id/ending_view"
         android:tag="constrView"
-        android:layout_width="280dp"
-        android:layout_height="280dp">
+        android:visibility="invisible"
+        ...>
 
         <EditText
             android:id="@+id/text3"
             android:tag="firstView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            .../>
  </ConstraintLayout>
 ```
 
@@ -69,9 +66,9 @@ transition.duration = 500
 
 transition.interpolator = AccelerateDecelerateInterpolator()
 
-transition.animateTo(0f)
+transition.animateTo(percent = 0f)
 
-transition.onPercentChanged {
+transition.onProgressChanged {
 //triggered on every progress change of the transition
     seekBar.progress = (it * 100).toInt()
     }
