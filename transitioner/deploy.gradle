@@ -1,0 +1,76 @@
+apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'com.jfrog.bintray'
+apply from: 'keystore.gradle'//the file, containing the bintray API key
+ext {
+    // This configuration will result in:
+    // compile '<groupId>:<artifactId>:<libVersion>'
+    groupId = 'bg.devlabs.transitioner' // package name of the project
+    artifactId = "transitioner" // module name of the library
+    libVersion = "1.3"
+}
+version = libVersion
+group = groupId
+//take a look at https://github.com/bintray/gradle-bintray-plugin#buildgradle
+bintray {
+    user = 'radoslav' // Your bintray User
+    key = bintray_key // Defined in keystore.gradle file
+    configurations = ['archives']
+    publish = true
+    override = false
+    pkg {
+        repo = "maven" //bintray repo
+        name = "transitioner" //bintray package
+        version {
+            name = libVersion
+        }
+    }
+}
+install {
+    repositories.mavenInstaller {
+        pom.project {
+            packaging 'aar'
+            groupId groupId
+            artifactId artifactId
+            version libVersion
+            name artifactId // pom.project.name must be same as bintray.pkg.name
+        }
+    }
+}
+
+//just copy paste the lines below
+if (project.hasProperty("kotlin")) { //Kotlin libraries
+    task sourcesJar(type: Jar) {
+        classifier = 'sources'
+        from android.sourceSets.main.java.srcDirs
+    }
+
+    task javadoc(type: Javadoc, dependsOn: dokka) {
+
+    }
+} else if (project.hasProperty("android")) {
+    task sourcesJar(type: Jar) {
+        classifier = 'sources'
+        from android.sourceSets.main.java.srcDirs
+    }
+
+    task javadoc(type: Javadoc) {
+        source = android.sourceSets.main.java.srcDirs
+        classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+    }
+} else { // Java libraries
+    task sourcesJar(type: Jar, dependsOn: classes) {
+        classifier = 'sources'
+        from sourceSets.main.allSource
+    }
+}
+
+task javadocJar(type: Jar, dependsOn: javadoc) {
+    classifier = 'javadoc'
+    from javadoc.destinationDir
+    // options.encoding = 'UTF-8'
+}
+
+artifacts {
+    archives javadocJar
+    archives sourcesJar
+}
