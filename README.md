@@ -7,7 +7,7 @@ Transitioner provides easy, dynamic and adjustable animations between two views 
 
 <img src="https://github.com/dev-labs-bg/transitioner/blob/master/preview1.gif" width="600">
 
-
+App design feature [here](https://www.uplabs.com/posts/ios-weather-app-animation-interface).
 ## Usage
 
 First you need to create a Transitioner object containing your original and ending views:
