@@ -1,6 +1,6 @@
 ![logo](https://raw.githubusercontent.com/dev-labs-bg/transitioner/master/logo.png)
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-a31f34.svg?style=flat-square)](https://opensource.org/licenses/MIT) [![Download](https://img.shields.io/badge/download-1.3-6db33f.svg?style=flat-square&label=version)](https://bintray.com/radoslav/maven/transitioner/1.3/link) [![Kotlin](https://img.shields.io/badge/kotlin-1.2.0-f5801e.svg?style=flat-square)](http://kotlinlang.org) [![Twitter URL](https://img.shields.io/badge/twitter-%40devlabsbg-1DA1F2.svg?style=flat-square&logo=twitter)](http://twitter.com/devlabsbg)
+[![License: MIT](https://img.shields.io/badge/license-MIT-a31f34.svg?style=flat-square)](https://opensource.org/licenses/MIT) [![Download](https://img.shields.io/badge/download-1.3-6db33f.svg?style=flat-square&label=version)](https://bintray.com/radoslav/maven/transitioner/1.3/link) [![Twitter URL](https://img.shields.io/badge/twitter-%40devlabsbg-1DA1F2.svg?style=flat-square&logo=twitter)](http://twitter.com/devlabsbg)
 
 Transitioner provides easy, dynamic and adjustable animations between two views with nested children.
 
@@ -84,7 +84,13 @@ Here is a preview of a simple application made using this library
 This effect can be reproduced by placing the "Transitioner.setProgress(Float)" function inside a onTouch or a onProgressChanged method.
 
 ---
+
+
 ## Download
+
+### Manually
+
+The recommended way to download is to copy [the single library class file](https://github.com/dev-labs-bg/transitioner/blob/master/transitioner/src/main/java/bg/devlabs/transitioner/Transitioner.kt) and use it in your application.
 
 ### Gradle
 
@@ -93,37 +99,12 @@ dependencies {
   compile 'bg.devlabs.transitioner:transitioner:<latest_version>'
 }
  ```
- 
-### Maven
-```xml
-<dependency>
-  <groupId>bg.devlabs.transitioner</groupId>
-  <artifactId>transitioner</artifactId>
-  <version>latest_version</version>
-  <type>pom</type>
-</dependency>
-```
-
-### Manually
-
-You can also manually download [the library class](https://github.com/dev-labs-bg/transitioner/blob/master/transitioner/src/main/java/bg/devlabs/transitioner/Transitioner.kt) and use it in your application.
-
----
-## Compatibility
-
-Minimum Android SDK: API level 19
-
----
-## Author
-
-Radoslav Yankov [@Radoslav_Y](https://twitter.com/Radoslav_Y)
 
 ---
 ## Getting help
 
-If you spot a problem you can open an issue on the Github page, or alternatively, you can tweet us at [@devlabsbg](https://twitter.com/devlabsbg)
+Dev Labs  [@devlabsbg](https://twitter.com/devlabsbg)
 
----
-## License
+Radoslav Yankov [@rado__yankov](https://twitter.com/rado__yankov)
 
-Transitioner is released under the [MIT License](https://gitlab.com/SimonaStoyanova/flying-fab/blob/master/LICENSE).
+Under [MIT License](https://gitlab.com/SimonaStoyanova/flying-fab/blob/master/LICENSE).
