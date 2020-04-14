@@ -83,8 +83,6 @@ Here is a preview of a simple application made using this library
 
 This effect can be reproduced by placing the "Transitioner.setProgress(Float)" function inside a onTouch or a onProgressChanged method.
 
----
-
 
 ## Download
 
@@ -100,11 +98,14 @@ dependencies {
 }
  ```
 
----
 ## Getting help
 
 Dev Labs  [@devlabsbg](https://twitter.com/devlabsbg)
 
 Radoslav Yankov [@rado__yankov](https://twitter.com/rado__yankov)
+
+
+
+
 
 Under [MIT License](https://gitlab.com/SimonaStoyanova/flying-fab/blob/master/LICENSE).
